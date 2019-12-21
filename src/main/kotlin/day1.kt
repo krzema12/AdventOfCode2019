@@ -1,5 +1,5 @@
 fun main() {
-    val moduleMasses = {}.javaClass.getResource("inputs/day1").readText().split("\n").map(String::toInt)
+    val moduleMasses = readTextFileFromResourcesForDay(1).split("\n").map(String::toInt)
     println(fuelForModulesNotTakingFuelMassIntoConsideration(moduleMasses))
     println(fuelForModulesTakingFuelMassIntoConsideration(moduleMasses))
 }
